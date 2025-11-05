@@ -106,6 +106,7 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 	- <img src="./images/01_farmers_market_conceptual_model.png" width="600">
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+### Diagram included in images folder called "Assignment_1_Logical_data_model.drawio.png"
 ***
 
 ## Section 2:
@@ -154,7 +155,9 @@ Steps to complete this part of the assignment:
 	- or, from your local forked repository  
 - Complete each question
 
-### Write SQL
+### Write SQL - 
+
+###MY SQL CODING ARE IN THE .SQL FOLDER
 
 #### AGGREGATE
 1. Write a query that determines how many times each vendor has rented a booth at the farmer’s market by counting the vendor booth assignments per `vendor_id`.
@@ -205,5 +208,13 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+Upon reading the article above and reflectig on how the effects of value system embedded in data bases has impacted me personnaly, I am moved to share some of my experinces as someone who came to Canada as an international student. 
+One of the ways I encountered this effects was my inability to access social amenities and funding oppurtunites. Some examples  are while applying for financial aid or loans or credit card. Everytime they requested my legal status in Canada and i inputted "international student" or anything other than "Citizen or Permanent Resident", the applications was outrightly rejected because I did not qualify. This same pattern also was observed in the application for part-time job roles whereby I would be outrightly rejected based on my legal status in Canada even though I was eligible to work up to 20 hours per week then. Unfortunately, this experience tends to carry over into when one legally holds a work permit in canada. Many of my friends and acquintance were also outrghtly rejected by jobs and organizations because they where considered a temporary residents even though they were legally allowed to hold full time work positions in canada. 
+This bias comes from the lack of immigration law knowledge that was eventually built into data systems which automatically rejected anyone who did not meet the blanket requiremnt of holding a permanent residency or Citizenship of Canada.
+
+Very similarly, another way i see this effects is in the way some experimental programs are coded to have binary systems when inputing gender and how people who may not conform to any of these genders are immediately exculded when capturing data. 
+
+Recently, I listened to someone who was visually diabled (had lost one eye) recall the challenges she experinced in providing biometric data. The scanner could not scan and process her facial structure and kept providng the feedback "open your eyes". This encounter was a very fustrating as she had to go back to the organization multiple times before they were able to succefully capture her with an alternative system. In her scenerio, the system was coded to only capture the face if two eyes were present and open without considering that some people may have lost an eye. 
+
+Taking the reccomendations from the paper, system designs need to be flexible to have fields updated instead of hard coding that may requre a complete overhual as things change in the future.
 ```
