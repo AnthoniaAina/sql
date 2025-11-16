@@ -107,6 +107,13 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
 ### Diagram included in images folder called "Assignment_1_Logical_data_model.drawio.png"
+
+relationship summary
+
+customer to customer_purchase					1-to-many
+customer purchase to market_date_info			1-to-many
+vendor_booth_assignment to market_date_info 	1-to-many
+Booth to vendor_booth_assignment				1-to-1
 ***
 
 ## Section 2:

@@ -21,9 +21,13 @@ LIMIT 10
 
 SELECT * 
 FROM customer_purchases
-WHERE product_id = 4 and 9
+WHERE product_id IN (4, 9)
 
+--OR 
 
+SELECT * 
+FROM customer_purchases
+WHERE product_id = 4 OR product_id = 9
 
 /*2. Write a query that returns all customer purchases and a new calculated column 'price' (quantity * cost_to_customer_per_qty), 
 filtered by customer IDs between 8 and 10 (inclusive) using either:
