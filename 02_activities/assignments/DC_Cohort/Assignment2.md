@@ -44,6 +44,12 @@ Additionally, include a date table.
 There are several tools online you can use, I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.com/pages/).
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
+**relation ship of my tables ***
+customer to order   1-to-many
+employee to order   1-to-many
+order to Sales      1-to-many
+book to sales       1-to-many
+date to order       1-to-many
 
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
@@ -51,11 +57,18 @@ We want to create employee shifts, splitting up the day into morning and evening
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
 
-**HINT:** search type 1 vs type 2 slowly changing dimensions. 
+**HINT:** search type 1 vs type 2 slowly changing dimensions (SCD). 
 
 ```
 Your answer...
 ```
+
+'''Type 1 SCD- is a type of architecture that overwrites the old CUSTOMER_ADDRESS information. This type of architecture only retains the current address inputed. Therefore, it does not save the cutomers address permanently. one can use this SCD type to collect information like shipping address.
+
+WHILE 
+
+Type 2 SCD - the architecture here retains changes in the CUSTOMER_ADDRESS because a unique Id is assigned to each address input. it keeps all previous addresses and everytime time an address changes, a new record is added with effective dates. Therfore, you can see historical addresses.'''
+
 
 ***
 
@@ -185,3 +198,7 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 ```
 Your thoughts...
 ```
+## The article touched on so many ethical issues ranging from how technological data bases are built by human labor which often goes unrecognized and sometimes undervalued and underpaid. Their example of how humans make garment hit home to me personally as I worry about how quickly fast fashion and over consumption is becoming normal in the world we currently live in and how we probably should be asking a lot more questions about the ethic and fairness accorded to the manual workers. 
+## Another big point that was discussed in this article is how bias is introduced into data and models. Since human labor and decisions in labeling and taxonomy is how these AI models are built, it is therefore very easy to introduce cultural, social, and subjective bias into AI systems. Some of these biases the begs the question on who gets to decided what is “safe” or “offensive”, what and who is labelled and why? What criteria justify the way data is labelled? Finally, who would be held responsible for the human errors or harms that is coded into the data? 
+## A personal example a few years back (around 2022) was when black women like me realized that when we googled “Professional hairstyles for women” not a single black woman’s hair was highlighted. This brought about a lot of conversation about the bias that was built into googles data base on what a professional woman should look like.  This experience highlights how any biases about identities or categories that are underrepresented or misrepresented in the training datasets can be scaled into bigger databases which can lead to unfair or harmful outputs. 
+## Overall, the author highlights how AI development is not purely technical but social, and why we need ethical governance that recognizes the human work behind the models. They also recommend that we acknowledge and fairly compensate the human labor that makes these systems possible which I agree with. ##
